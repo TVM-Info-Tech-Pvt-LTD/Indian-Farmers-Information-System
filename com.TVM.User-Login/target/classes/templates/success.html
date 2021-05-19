@@ -1,0 +1,28 @@
+<html>
+
+
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration and Login App</title>
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
+	
+</head>
+<body>
+	
+<form th:action="@{/registration}" method="post" th:object="${user}">
+					<div class="form-group">
+					<div class="text-center">
+					<h1>USER SUCCESSFULLY REGISTERED</h1>
+						<span> <a href="/" th:href="@{/login}">
+						<button type="button" class="btn btn-primary btn-lg btn-block">Log In</button>
+								</a></span>
+					</div>
+					</div>
+					</form>
+</body>
+
+</html>
